@@ -11,54 +11,54 @@ namespace HomeWork4
         static void Main(string[] args)
         {
             #region Операции с матрицами
-            //int[,] matrix1 = CreateMatrix();
-            //Console.WriteLine("Matrix1:");
-            //Print(matrix1);
-            //int[,] matrix2 = CreateMatrix();
-            //Console.WriteLine("Matrix2:");
-            //Print(matrix2);
-            //Console.Write("\nВведите число на которое нужно умножить Matrix1:");
-            //int num = int.Parse(Console.ReadLine());
-            //int[,] matrixResult = Multi_Matrix_Num(matrix1, num);
-            //Console.WriteLine("\nРезультат умножения матрицы на число, MatrixResult: \n");
-            //Print(matrixResult);
-            //Console.WriteLine("\nРезультат сложения Matrix1 и Matrix2, MatrixResult: \n");
-            //matrixResult = MatrixAddition(matrix1, matrix2);
-            //Print(matrixResult);
-            //Console.WriteLine("\nРезультат вычитания Matrix1 и Matrix2, MatrixResult: \n");
-            //matrixResult = DifferenceOfMatrix(matrix1, matrix2);
-            //Print(matrixResult);
-            //Console.WriteLine("\nРезультат умножения Matrix1 и Matrix2, MatrixResult: \n");
-            //matrixResult = MultiMatrix(matrix1, matrix2);
-            //Print(matrixResult);
+            int[,] matrix1 = CreateMatrix();
+            Console.WriteLine("Matrix1:");
+            Print(matrix1);
+            int[,] matrix2 = CreateMatrix();
+            Console.WriteLine("Matrix2:");
+            Print(matrix2);
+            Console.Write("\nВведите число на которое нужно умножить Matrix1:");
+            int num = int.Parse(Console.ReadLine());
+            int[,] matrixResult = Multi_Matrix_Num(matrix1, num);
+            Console.WriteLine("\nРезультат умножения матрицы на число, MatrixResult: \n");
+            Print(matrixResult);
+            Console.WriteLine("\nРезультат сложения Matrix1 и Matrix2, MatrixResult: \n");
+            matrixResult = MatrixAddition(matrix1, matrix2);
+            Print(matrixResult);
+            Console.WriteLine("\nРезультат вычитания Matrix1 и Matrix2, MatrixResult: \n");
+            matrixResult = DifferenceOfMatrix(matrix1, matrix2);
+            Print(matrixResult);
+            Console.WriteLine("\nРезультат умножения Matrix1 и Matrix2, MatrixResult: \n");
+            matrixResult = MultiMatrix(matrix1, matrix2);
+            Print(matrixResult);
             #endregion
 
             #region Работа со строками
-            //Console.WriteLine("Напишите произвольную строку.");
-            //string text = Console.ReadLine();
-            //Console.WriteLine();
-            //Console.Write("Слово с минимальной длиной: ");
-            //string str1 = MinWord(text);
-            //Console.WriteLine($"\"{str1}\"");
-            //Console.WriteLine();
-            //List<string> str2 = MaxWord(text);
-            //Console.Write("Слово с максимальной длиной: ");
-            //foreach (var item in str2)
-            //{
-            //    Console.Write($"\"{item}\", ");
-            //}
-            //Console.WriteLine();
+            Console.WriteLine("Напишите произвольную строку.");
+            string text = Console.ReadLine();
+            Console.WriteLine();
+            Console.Write("Слово с минимальной длиной: ");
+            string str1 = MinWord(text);
+            Console.WriteLine($"\"{str1}\"");
+            Console.WriteLine();
+            List<string> str2 = MaxWord(text);
+            Console.Write("Слово с максимальной длиной: ");
+            foreach (var item in str2)
+            {
+                Console.Write($"\"{item}\", ");
+            }
+            Console.WriteLine();
             #endregion
 
             #region Повторяющиеся символы
-            //Console.WriteLine("Преобразование строки с повторяющимися символами:");
-            //string _str = "ХХХХХХХХоооооОООООрррроооооооошшшшшаааааааааяяя пппппппппппппппппоооооооооооооооооггггггггггггггггггггггггооооооооооооооооооооооддддддддддддаааааааааааааа.";
-            //Console.WriteLine($"Исходная строка:\n {_str}\n");
-            //Console.WriteLine($"Преобразованная строка:\n {DelRepetChar(_str)}\n");
+            Console.WriteLine("Преобразование строки с повторяющимися символами:");
+            string _str = "ХХХХХХХХоооооОООООрррроооооооошшшшшаааааааааяяя пппппппппппппппппоооооооооооооооооггггггггггггггггггггггггооооооооооооооооооооооддддддддддддаааааааааааааа.";
+            Console.WriteLine($"Исходная строка:\n {_str}\n");
+            Console.WriteLine($"Преобразованная строка:\n {DelRepetChar(_str)}\n");
             #endregion
 
             #region Прогрессия
-           
+
             Console.WriteLine(Progression());
 
             #endregion
